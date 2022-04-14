@@ -2,18 +2,23 @@
   box-sizing: border-box;
 }
 .cards-container{
-  text-align: center;
+   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 24px;
 }
-
+.title-container{
+font-size: 1.2em;
+}
 
 .card-wrapper{
   --img-size: 150px;
-  --main-bg-color: darkblue;
+  --main-bg-color: #17A2B7;
+  margin: 5px 01px;
+  display: inline-block;
   min-width: calc(var(--img-size)*2);
   width: 100%;
   max-width: calc(var(--img-size)*3);
-  border: 1px solid darkblue;
+  border: 1px solid #3C959E;
   font-size: 0.75em;
 }
 .bg-header{
@@ -23,7 +28,6 @@
 .card-content{
   padding: 0 20px;
 }
-
 .photo-profile{
   width: var(--img-size);
   height: var(--img-size);
@@ -35,28 +39,60 @@
   object-position: top center;
   background-color: white;
 }
+.full-name-profile{
+  padding: 15px;
+  font-size: 1.2em;
+}
+.address-profile{
+  padding: 0px 0px 25px 0px;
+  ;
+}
+.capitalize{
+  text-transform: capitalize;
+}
+.uppercase{
+  text-transform: uppercase;
+}
 .btn-container{
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
-  padding: 15 px 0;
- 
-}
+  padding: 15px 0;
+  }
+
 .btn{
+  padding: 10px;
   cursor: pointer;
   border: none;
+  border-radius: 5px;
+  color:white;
+  font-size: 0.9em;
   }
+
 .follow{
-  background-color: green;
+  background-color: #24AA40;
 }  
+.send{
+  background-color: #17A2B7;
+} 
+.description-profile{
+  padding: 20px 0px 30px 0px;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
 .card-footer{
   background-color: var(--main-bg-color);
   padding: 10px;
 }
+
 .link-social{
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   
+}
+.card-list-social{
+  padding: 5px;
 }
 .card-item-social{
   display: inline-block;
@@ -71,4 +107,3 @@
 .icon-twitter{
   background-image: url(./../icons/twitter.png)
 }
-/* скачать новые иконки большего размера */
