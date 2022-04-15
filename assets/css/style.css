@@ -43,6 +43,12 @@ font-size: 1.2em;
   padding: 15px;
   font-size: 1.2em;
 }
+.text-overflow{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .address-profile{
   padding: 0px 0px 25px 0px;
   ;
@@ -60,6 +66,9 @@ font-size: 1.2em;
   }
 
 .btn{
+  min-width: 150px;
+  width: 100%;
+  max-width: 150px;
   padding: 10px;
   cursor: pointer;
   border: none;
